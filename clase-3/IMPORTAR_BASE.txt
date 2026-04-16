@@ -1,0 +1,21 @@
+================================================================================
+Cómo importar la base "programacion2_merchandising" en XAMPP
+================================================================================
+
+1) Iniciar Apache y MySQL en el panel de XAMPP.
+
+2) Abrir phpMyAdmin: http://localhost/phpmyadmin
+
+3) Pestaña "Importar" → Elegir el archivo:
+   htdocs/ProgramacionIINuevaEscuela/clase-3/sql/programacion2_merchandising.sql
+
+4) Ejecutar. Debe crearse la base programacion2_merchandising con tablas y datos.
+
+   Alternativa (consola), desde la carpeta donde está el .sql:
+   "C:\xampp\mysql\bin\mysql.exe" -u root -p < programacion2_merchandising.sql
+
+5) Comprobar: en phpMyAdmin seleccionar la base y revisar tablas:
+   categorias, peliculas, productos, clientes, pedidos, pedido_items
+   y la vista v_productos_con_categoria.
+
+================================================================================
